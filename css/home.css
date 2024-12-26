@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    max-width: 2000px;
+    width: 100%;
+}
+.header .menutop{
+    width: 100%;
+    height: 30px;
+    background: #1e1f29;
+    display: flex;
+    justify-content: end;
+}
+.menutop ul li{
+    display: inline-block;
+}
+.menutop ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin-right: 7px;
+}
+.menutop ul li a:hover{
+    color: red;
+}
+/* hết menutop */
+
+.header .menumid{
+    width: 100%;
+    height: 100px;
+    background-color: #15161d;
+}
+.trai{
+    width: 30%;
+    float: left;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.giua{
+    width: 40%;
+    float: left;
+    padding-top: 60px;
+    position: relative;
+}
+.phai{
+    width: 30%;
+    float: right;
+    display: flex;
+    justify-content: end;
+}
+.giua input{
+    padding: 5px;
+    width: 300px; 
+    border-radius: 20px 0px 0px 20px;  
+}
+.giua button {
+    padding: 5px 10px;
+    background: white;
+    color: #0078D7;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 20px 20px 0;
+}
+.trai img{
+    height: 90px;
+}
+.giua .fa-shopping-bag{
+    color: white;
+    padding: 5px 10px;
+    
+}
+.header .menumid .giua .fa-money{
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 470px;
+}
+.phai ul li{
+    display: inline-block;
+    padding-right: 15px;
+    padding-top: 12px;
+}
+.phai ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.phai ul li a:hover{
+    color: rgb(195, 27, 27);
+}
+/* hết menutop */
+
+.header .menubottom{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(9, 37, 77);
+    display: flex;
+    justify-content: center;
+}
+.header .menubottom ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header .menubottom ul li a:hover{
+    color: red;
+}
+.header .menubottom ul li{
+    display: inline-block;
+    padding: 10px;
+}
+/* hết menubottom */
+
+
+.main .ads{
+    background-color: rgb(15, 34, 66);
+    padding-top: 5px;
+    padding-bottom: 60px;
+}
+.show {
+    display: block;
+}
+.slideshow {
+    box-sizing: border-box;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden; /* Add overflow: hidden to prevent text from overflowing */
+}
+
+.slide {
+    display: none;
+    width: 100%; /* Set width to 100% */
+}
+.slide img {
+    width: 100%;
+    height: 500px; /* hoặc kích thước cố định bạn muốn */
+    object-fit: cover; /* đảm bảo hình ảnh không bị vùi mất hoặc bị méo khi thay đổi kích thước */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Add background color */
+    z-index: 100; /* Set z-index to ensure it's above the slides */
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: white;
+    font-size: 25px;
+    padding: 10px 32px; /* Adjust padding */
+    position: absolute;
+    bottom: 0; /* Align text to bottom */
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add background color */
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.6 }
+    to { opacity: 1 }
+}
+/* hết showslide */
+
+.main h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.main{
+    background-color: rgb(15, 34, 66);
+    max-width: 2000px;
+    width: 100%;
+    padding: 20px 0;
+}
+.main .card {
+    background-color: white;
+    width: 17.7%;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: inline-block;
+    margin: 15px;
+    vertical-align: top;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  
+  .card-phoduct {
+    padding: 2px 16px;
+    margin: auto;
+  }
+.main .card img{
+    width: 100%;
+    height: 200px;
+}
+.main .card .card-phoduct h2{
+    font-size: 18px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.main .card .card-phoduct p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main .card .card-phoduct button{
+    float: right;
+}

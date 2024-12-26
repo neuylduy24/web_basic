@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="menutop">
+    </div>
+    <div class="menumid">
+        <div class="trai">
+            <img class="logo" src="https://vieclam43.net/uploads/734206-06-2023_110006.jpg" alt="">
+        </div>
+        <div class="giua">
+            <!-- <input type="text" placeholder="Search">
+            <button ><i class="fa fa-search fa-lg"></i></button>
+            <a href="cart.html"><i class="fa fa-shopping-bag fa-lg"></i></a> -->
+        </div>
+        <div class="phai">
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href=""><i class="fa fa-bell"></i>Notification</a></li>
+                <li><a href=""><i class="fa fa-globe"></i>
+                    Language
+                  <i class="fa fa-caret-down"></i></a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+      <div class="info-container">
+        <h2>User Information</h2>
+        <div class="info-field">
+            <label for="name">Name</label>
+            <span id="name-display">John Doe</span>
+            <input type="text" id="name-input" value="John Doe">
+        </div>
+        <div class="info-field">
+            <label for="email">Email</label>
+            <span id="email-display">john.doe@example.com</span>
+            <input type="email" id="email-input" value="john.doe@example.com">
+        </div>
+        <div class="info-field">
+            <label for="gender">Gender</label>
+            <span id="gender-display">Male</span>
+            <select id="gender-input">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="info-field">
+            <label for="dob">Date of Birth</label>
+            <span id="dob-display">1990-01-01</span>
+            <input type="date" id="dob-input" value="1990-01-01">
+        </div>
+        <div class="info-field">
+          <label for="address">Address</label>
+          <span id="address-display">Ha Noi</span>
+          <input type="address" id="address-input" value="Ha Noi">
+      </div>
+        <div class="buttons">
+            <button class="edit-btn" onclick="editInfo()">Edit</button>
+            <button class="save-btn" onclick="saveInfo()" style="display: none;">Save</button>
+            <button class="cancel-btn" onclick="cancelEdit()" style="display: none;">Cancel</button>
+        </div>
+    </div>
+  <script src="js/profile.js"></script>
+</body>
+</html>

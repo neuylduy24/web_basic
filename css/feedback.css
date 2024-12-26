@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.menutop {
+    width: 100%;
+    height: 30px;
+    background: #1e1f29;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* hết menutop */
+
+.menumid {
+    width: 100%;
+    height: 100px;
+    background-color: #15161d;
+}
+
+.menumid .trai {
+    width: 30%;
+    float: left;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.menumid .giua {
+    width: 40%;
+    float: left;
+    padding-top: 60px;
+    position: relative;
+}
+
+.menumid .phai {
+    width: 30%;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menumid .giua input {
+    width: 350px;
+    height: 30px;
+    border-radius: 20px 0 0 20px;
+    position: absolute;
+    top: 40px;
+    padding-left: 10px;
+}
+
+.menumid .giua button {
+    width: 50px;
+    height: 34px;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(243, 36, 0);
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 365px;
+}
+
+.menumid .trai img {
+    height: 90px;
+}
+
+.menumid .phai ul li {
+    display: inline-block;
+    padding-right: 15px;
+    padding-top: 12px;
+}
+
+.menumid .phai ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menumid .phai ul li a:hover {
+    color: rgb(195, 27, 27);
+}
+
+/* hết menumid */
+
+.menubottom {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(9, 37, 77);
+    display: flex;
+    justify-content: center;
+}
+
+.menubottom ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menubottom ul li a:hover {
+    color: red;
+}
+
+.menubottom ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.container h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.container .input-groupF{
+    font-size: 15px;
+    padding: 10px 530px 0;
+}
+.container .input-groupF input{
+    padding: 5px;
+}
+.container .input-groupF textarea{
+    padding: 5px;
+}
+.container .login-form button{
+    height: 30px;
+    margin-top: 20px;
+    position: absolute;
+    left: 730px
+}
+.container .extra-links{
+    text-align: center;
+    padding-top: 70px;
+}

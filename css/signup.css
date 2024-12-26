@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+body{
+    background-color: rgb(11, 46, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.tong{
+    max-width: 340px;
+    width: 100%;
+    height: 370px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 40px 50px;
+    position: relative;
+}
+.tong h1{
+    font-size: 36px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.tong img{
+    width: 10%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.tong .input-box{
+    width: 85%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    position: absolute;
+    right: -50px;
+    padding-left: 15px;
+    font-size: 17px;
+}
+.input-box input::placeholder{
+    color: black;
+}
+.input-box i{
+    position: absolute;
+    left: 3px;
+    top: 15px;
+    font-size: 25px;
+}
+.tong .btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: 650;
+}
+.tong .btn a{
+    color: #000;
+    text-decoration: none;
+}

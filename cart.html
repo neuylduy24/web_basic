@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="menutop">
+    </div>
+    <div class="menumid">
+        <div class="trai">
+            <img class="logo" src="https://vieclam43.net/uploads/734206-06-2023_110006.jpg" alt="">
+        </div>
+        <div class="giua">
+            <input type="text" placeholder="Search">
+            <button><i class="fa fa-search fa-lg"></i></button>
+        </div>
+        <div class="phai">
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href=""><i class="fa fa-bell"></i>Notification</a></li>
+                <li><a href=""><i class="fa fa-globe"></i>
+                    Language
+                  <i class="fa fa-caret-down"></i></a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="menubottom">
+    </div>
+    <div class="money">
+        <div class="money-cart">
+            <h2>My Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0</span></p> 
+            <button class="btnmoney" id="checkout-btn">Pay</button>
+        </div>
+    </div>
+    <script src="./js/cart.js">
+    </script>
+</body>
+</html>
